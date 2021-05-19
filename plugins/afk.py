@@ -47,14 +47,14 @@ async def set_afk(client, message):
     afk_start = start_1.replace(microsecond=0)
     log = LogIt(message)
     if msge:
-        msg = f"**My Master Seems To Be Too Busy 👀.** \n__He Going Afk Because Of__ `{msge}`"
+        msg = f"**My Master Is Afk 👀.** \n__He Going Afk Because Of__ `{msge}`"
         await log.log_msg(
             client,
             f"#AfkLogger Afk Is Active And Reason is {msge}",
         )
         await go_afk(afk_start, msge)
     else:
-        msg = f"**I Am Busy And I Am Going Afk**."
+        msg = f"**I Am Going Afk**."
         await log.log_msg(
             client,
             f"#AfkLogger Afk Is Active",

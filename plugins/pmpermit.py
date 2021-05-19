@@ -348,7 +348,7 @@ async def pmPermit(client, message):
         PM_WARNS[int(message.chat.id)] = 0
     elif PM_WARNS[int(message.chat.id)] >= int(pm_s_):
         await message.reply_text(
-            f"`Thats It! I Gave You {int(pm_s_)} Warning. Now Fuck Off. Blocked And Reported!`"
+            f"`Thats It! I Gave You {int(pm_s_)} Warning. Now You're Blocked. Blocked And Reported!`"
         )
         await client.block_user(user_.id)
         if int(message.chat.id) in OLD_MSG:
